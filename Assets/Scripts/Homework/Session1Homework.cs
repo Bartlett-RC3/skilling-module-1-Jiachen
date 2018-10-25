@@ -16,22 +16,22 @@ public class Session1Homework : MonoBehaviour
     public int[] myIntArray = new int[5] { 1, 2, 3, 4, 5 };
     public float[] myTenElementsFloatArray = new float[10];
     public int[,] myTwoDimentioalArray = new int[3, 5];
-    public List<int> myIntegerList = new List<int>();
+    public List<float> myList = new List<float>(){1.1f,2.2f,3f,4.5f,5f,6f,3f,8f};
     
 
     Dictionary<string, string> Games = new Dictionary<string, string>();
 
     // Use this for initialization
-    void Start ()
+    public void Start ()
     {
-        myIntegerList[0] = 1;
+        myList[0] = 1;
         myIntArray[2] = 300;
         Debug.Log(myIntArray[1].ToString());
-        myIntegerList.Add(1234);
-        myIntegerList.Add(2);
-        myIntegerList.Add(3);
-        Debug.Log(myIntegerList[2].ToString());
-        Debug.Log(myIntegerList[myIntegerList.Count - 1].ToString());
+        myList.Add(1234);
+        myList.Add(2);
+        myList.Add(3);
+        Debug.Log(myList[2].ToString());
+        Debug.Log(myList[myList.Count - 1].ToString());
 
 
         Games.Add("RPG", "JW3");
@@ -53,7 +53,7 @@ public class Session1Homework : MonoBehaviour
 
     public void PrintSomeNumbers()
     {
-        Debug.Log(myIntegerList[0]);
+        Debug.Log(myList[0]);
         Debug.Log(myIntArray[0]);
         Debug.Log(myInteger);
     }
