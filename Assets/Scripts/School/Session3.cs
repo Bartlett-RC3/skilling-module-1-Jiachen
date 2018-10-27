@@ -90,7 +90,7 @@ public class Session3 : MonoBehaviour {
         }
 
         // Keyboard input
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.R))
         {
             gameObject.transform.Rotate(new Vector3(0, 5, 0));
         }
